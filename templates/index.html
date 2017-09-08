@@ -41,8 +41,9 @@
     </article>
     <article>
         <p>Activities:</p>
-        {% for activity in session.activities %}
+        {% for activity in session.activities[::-1] %}
             <p>{{ activity }}</p>
+        {% endfor %}
     </article>
 </body>
 </html>
